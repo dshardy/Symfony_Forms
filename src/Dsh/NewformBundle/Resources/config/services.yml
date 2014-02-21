@@ -1,7 +1,7 @@
 parameters:
-#    newform.example.class: Dsh\NewformBundle\Example
+#    dsh_newform.example.class: Dsh\NewformBundle\Example
 
 services:
-#    newform.example:
-#        class: %newform.example.class%
+#    dsh_newform.example:
+#        class: %dsh_newform.example.class%
 #        arguments: [@service_id, "plain_value", %parameter%]

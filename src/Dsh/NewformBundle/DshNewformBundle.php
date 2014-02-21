@@ -4,6 +4,6 @@ namespace Dsh\NewformBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class NewformBundle extends Bundle
+class DshNewformBundle extends Bundle
 {
 }
