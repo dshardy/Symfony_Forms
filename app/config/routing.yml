@@ -1,5 +1,13 @@
+dsh_task:
+    resource: "@DshTaskBundle/Resources/config/routing.yml"
+    prefix:   /
+
 dsh_newform:
     resource: "@DshNewformBundle/Resources/config/routing.yml"
+    prefix:   /
+    
+dsh_cmossexample:
+    resource: "@DshNewformBundle/Resources/config/formrouting.yml"
     prefix:   /
 
 

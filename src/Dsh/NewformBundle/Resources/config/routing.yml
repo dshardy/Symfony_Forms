@@ -1,3 +1,9 @@
 dsh_newform_homepage:
     pattern:  /hello/{name}
     defaults: { _controller: DshNewformBundle:Default:index }
+
+
+# dsh_formexample_cmoss:
+#     pattern: /
+#     defaults: { _controller: DshNewformBundle:Default:form }    
+    
