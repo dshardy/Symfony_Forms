@@ -1,0 +1,5 @@
+# dsh_task_homepage:
+#     pattern:  /hello/{name}
+#     defaults: { _controller: DshTaskBundle:Default:index }
+    
+    
