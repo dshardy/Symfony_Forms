@@ -1,9 +1,9 @@
-# dsh_formexample_cmoss:
-#     pattern: /
-#     defaults: { _controller: DshNewformBundle:Default:form }
+ dsh_formexample_cmoss:
+     pattern: /
+     defaults: { _controller: DshNewformBundle:Default:form }
     
 
 dsh_formexample_cmoss:
      path:     /
-#     defaults: { _controller: acme.hello.controller:indexAction }
-      defaults: { _controller: Dsh.Form.controller:formAction }
+#    defaults: { _controller: acme.hello.controller:indexAction }
+#      defaults: { _controller: Dsh.Form.controller:formAction }
