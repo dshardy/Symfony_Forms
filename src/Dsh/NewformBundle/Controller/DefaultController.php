@@ -19,10 +19,13 @@ class DefaultController extends Controller
 {
     Public function indexAction()
     {
-        $person = new Person();
+/*
+        $person = new person();
         
         $person->setName('billy the kiddy');
         $person->setAge('47');
+        $person->setFootballteam('chelsea');
+*/
 
 	    $form = $this->createformbuilder()
 	    
@@ -37,7 +40,10 @@ class DefaultController extends Controller
 	    'dazform' => $form->createView(),
 	    ));
 	    
-	 }
+    }
 
-  }
+}
+
+
+
 

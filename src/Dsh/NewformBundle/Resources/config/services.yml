@@ -11,7 +11,6 @@ services:
 
 
 
-# src/Acme/HelloBundle/Resources/config/services.yml
 parameters:
     # ...
     Dsh.Formcontroller.Newform.class: Dsh\NewformBundle\Controller\formController

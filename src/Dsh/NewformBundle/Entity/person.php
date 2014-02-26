@@ -1,74 +1,111 @@
 <?php
 
-
 namespace Dsh\NewformBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * ORM\Entity()
- * @ORM\Table(name="person")
+ * person
  */
-
-class Person
+class person
 {
-
-     /**
-     * @ORM\Column(type="integer")
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
-     */
-    protected $id;
-    
-    
-    
     /**
-     * @ORM\Column(type="string", length=100)
+     * @var integer
      */
-    protected $name;
-
-    
-    /**
-     * @ORM\Column(type="Integer")
-     */
-    protected $age;
-
+    private $id;
 
     /**
-     * @ORM\Column(type="string", length=100)
+     * @var string
      */
-    protected $favfootballteam;
-    
-    
-    
-    
-    public function get_id(){
-    return $id;
+    private $name;
+
+    /**
+     * @var integer
+     */
+    private $age;
+
+    /**
+     * @var string
+     */
+    private $footballteam;
+
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
     }
 
-    public function get_name(){
-    return $name;
+    /**
+     * Set name
+     *
+     * @param string $name
+     * @return person
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+
+        return $this;
     }
 
-    public function get_age(){
-    return $age;
+    /**
+     * Get name
+     *
+     * @return string 
+     */
+    public function getName()
+    {
+        return $this->name;
     }
 
-    public function get_favfootballteam(){
-    return $favfootballteam;
+    /**
+     * Set age
+     *
+     * @param integer $age
+     * @return person
+     */
+    public function setAge($age)
+    {
+        $this->age = $age;
+
+        return $this;
     }
 
-    public function set_id($value){
-    $this->id = $value;
-	}
-	public function set_name($value){
-	    $this->name = $value;
-	}
-	public function set_age($value){
-	    $this->age = $value;
-	}
-	public function set_favfootballteam($value){
-	    $this->favfootballteam = $value;
-	}
+    /**
+     * Get age
+     *
+     * @return integer 
+     */
+    public function getAge()
+    {
+        return $this->age;
+    }
 
+    /**
+     * Set footballteam
+     *
+     * @param string $footballteam
+     * @return person
+     */
+    public function setFootballteam($footballteam)
+    {
+        $this->footballteam = $footballteam;
+
+        return $this;
+    }
+
+    /**
+     * Get footballteam
+     *
+     * @return string 
+     */
+    public function getFootballteam()
+    {
+        return $this->footballteam;
+    }
 }

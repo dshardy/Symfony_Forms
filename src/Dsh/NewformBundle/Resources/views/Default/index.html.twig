@@ -1,14 +1,12 @@
-{# Hello {{ name }}! #}
+{% extends '::base.html.twig' %}
 
-(% extends '::base.html.twig' %)
-
-(% block body %)
+{% block body %}
 <div class="container">
 
 {{form(dazform)}}
 
 </div>
 
-(% endblock %)
+{% endblock %}
 
 
