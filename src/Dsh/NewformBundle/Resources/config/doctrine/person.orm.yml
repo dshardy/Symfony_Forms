@@ -1,0 +1,20 @@
+Dsh\NewformBundle\Entity\person:
+    type: entity
+    table: null
+    repositoryClass: Dsh\NewformBundle\Entity\personRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: '255'
+        age:
+            type: integer
+        footballteam:
+            type: string
+            length: '255'
+    lifecycleCallbacks: {  }
