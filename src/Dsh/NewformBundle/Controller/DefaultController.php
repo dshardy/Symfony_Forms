@@ -10,6 +10,7 @@ class DefaultController extends Controller
     public function indexAction()
     {
         
+/*
         $person = new person();
         
         $person->setName('Billythekiddie');
@@ -20,7 +21,7 @@ class DefaultController extends Controller
         $em->persist($person);
         $em->flush();
         
-        $id = 2;
+        $id = 1;
         
         $person = $this->getDoctrine()
         ->getRepository('DshNewformBundle:Person')
@@ -33,7 +34,6 @@ class DefaultController extends Controller
     
    }
         
-/*
      
      $em = $this->getDoctrine()->getManager();
      
@@ -42,11 +42,11 @@ class DefaultController extends Controller
      $em->persist($person);
       $em->remove($person);
            $em->flush();
-*/
      
           
      
      exit(\Doctrine\Common\Util\Debug::dump($person));   
+*/
         
         
      return $this->render('DshNewformBundle:Default:index.html.twig');
