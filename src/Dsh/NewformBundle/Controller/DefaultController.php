@@ -10,8 +10,7 @@ class DefaultController extends Controller
     public function indexAction()
     {
         
-        /*
-$person = new person();
+        $person = new person();
         
         $person->setName('Billythekiddie');
         $person->setAge('47');
@@ -20,9 +19,8 @@ $person = new person();
         $em = $this->getDoctrine()->getManager();
         $em->persist($person);
         $em->flush();
-*/
         
-        $id = 3;
+        $id = 2;
         
         $person = $this->getDoctrine()
         ->getRepository('DshNewformBundle:Person')
@@ -35,14 +33,16 @@ $person = new person();
     
    }
         
+/*
      
      $em = $this->getDoctrine()->getManager();
      
      $person->setFootballteam('Liverpool');
      
-     /* $em->persist($person); */
+     $em->persist($person);
       $em->remove($person);
            $em->flush();
+*/
      
           
      
