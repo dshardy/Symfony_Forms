@@ -3,5 +3,5 @@ dsh_newform_homepage:
     defaults: { _controller: DshNewformBundle:Default:index }
 
 dsh_realworldform:
-     pattern: /goodbye/{banana}
+     pattern: /
      defaults: { _controller: DshNewformBundle:Realworldform:Realform }

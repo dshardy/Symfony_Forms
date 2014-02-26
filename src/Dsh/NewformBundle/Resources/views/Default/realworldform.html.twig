@@ -3,7 +3,17 @@
 {% block title %}New Controller{% endblock %}
 
 {% block body %}
-<h1>Welcome to the Realworldform page</h1>
+<div class="container">
 
-Goodbye {{'banana'}}
+
+
+{{ form_start(realform) }}
+    {{ form_errors(realform) }}
+
+    {{ form_row(realform.task) }}
+    {{ form_row(realform.dueDate) }}
+{{ form_end(realform) }}
+
+
+</div>
 {% endblock %}

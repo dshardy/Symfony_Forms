@@ -3,10 +3,12 @@
 namespace Dsh\NewformBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Request;
 
 class RealworldformController extends Controller
 {
-    public function RealformAction()
+    public function RealformAction(Request $request)
+   
     {
    
      
